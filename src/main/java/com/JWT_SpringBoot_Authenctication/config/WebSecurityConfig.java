@@ -1,4 +1,4 @@
-package com.JWT_SpringBoot_Authenctication.security;
+package com.JWT_SpringBoot_Authenctication.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

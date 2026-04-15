@@ -1,4 +1,4 @@
-package com.JWT_SpringBoot_Authenctication.security;
+package com.JWT_SpringBoot_Authenctication.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service;
 
 import com.JWT_SpringBoot_Authenctication.dto.LoginRequestDTO;
 import com.JWT_SpringBoot_Authenctication.dto.LoginResponseDTO;
+import com.JWT_SpringBoot_Authenctication.dto.SignupResponseDTO;
 import com.JWT_SpringBoot_Authenctication.model.Users;
 import com.JWT_SpringBoot_Authenctication.repository.UsersRepo;
+import com.JWT_SpringBoot_Authenctication.security.AuthUtil;
 
 import lombok.RequiredArgsConstructor;
 

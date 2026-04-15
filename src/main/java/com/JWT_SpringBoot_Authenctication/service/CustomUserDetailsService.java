@@ -1,4 +1,4 @@
-package com.JWT_SpringBoot_Authenctication.security;
+package com.JWT_SpringBoot_Authenctication.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,4 +1,4 @@
-package com.JWT_SpringBoot_Authenctication.security;
+package com.JWT_SpringBoot_Authenctication.dto;
 public class SignupResponseDTO {
  private Long id;
  private String username;

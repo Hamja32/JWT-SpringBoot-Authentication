@@ -44,7 +44,7 @@ public class Users implements UserDetails{
 		 return Collections.emptyList();  
 	}
 	@Override
-	public @Nullable String getPassword() {
+	public  String getPassword() {
 		// TODO Auto-generated method stub
 		return password;
 	}

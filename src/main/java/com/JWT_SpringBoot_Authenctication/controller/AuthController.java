@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.JWT_SpringBoot_Authenctication.dto.LoginRequestDTO;
 import com.JWT_SpringBoot_Authenctication.dto.LoginResponseDTO;
-import com.JWT_SpringBoot_Authenctication.security.AuthService;
-import com.JWT_SpringBoot_Authenctication.security.SignupResponseDTO;
+import com.JWT_SpringBoot_Authenctication.dto.SignupResponseDTO;
+import com.JWT_SpringBoot_Authenctication.service.AuthService;
 
 import lombok.RequiredArgsConstructor;
 
