@@ -30,4 +30,9 @@ public class AuthController {
 	public ResponseEntity<SignupResponseDTO> signup(@RequestBody LoginRequestDTO signupRequestDTO){
 		return ResponseEntity.ok(authService.signup(signupRequestDTO));
 	}
+	
+	@GetMapping("/admin")
+	public String getAdmin() {
+		return "This is ADMIN PAGE";
+	}
 }

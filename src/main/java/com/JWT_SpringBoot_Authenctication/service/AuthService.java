@@ -6,18 +6,17 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
+import com.JWT_SpringBoot_Authenctication.enums.Role;
 import com.JWT_SpringBoot_Authenctication.dto.LoginRequestDTO;
 import com.JWT_SpringBoot_Authenctication.dto.LoginResponseDTO;
 import com.JWT_SpringBoot_Authenctication.dto.SignupResponseDTO;
+//import com.JWT_SpringBoot_Authenctication.model.Role;
 import com.JWT_SpringBoot_Authenctication.model.Users;
 import com.JWT_SpringBoot_Authenctication.repository.UsersRepo;
 import com.JWT_SpringBoot_Authenctication.security.AuthUtil;
 
-import lombok.RequiredArgsConstructor;
 
 @Service
-@RequiredArgsConstructor 
 public class AuthService {
 	@Autowired
 	private AuthenticationManager authManager;
@@ -48,7 +47,9 @@ public class AuthService {
 		
 		user = userRepo.save(new Users(
 		    signupRequestDTO.getUsername(),
-		    passwordEncoder.encode(signupRequestDTO.getPassword()) 
+		    passwordEncoder.encode(signupRequestDTO.getPassword()),
+		    Role.USER
+		    
 		));
 		 return new SignupResponseDTO(user.getId(), user.getUsername());
 	}

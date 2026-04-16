@@ -6,7 +6,14 @@ import lombok.Data;
 public class LoginRequestDTO {
 	private String username;
 	private String password;
+//	private Role role;
 	
+	public LoginRequestDTO(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+		
+	}
 	
 	public String getUsername() {
 		return username;
@@ -20,5 +27,7 @@ public class LoginRequestDTO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	
 }
+
